@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Css on 这是一个博客</title>
-        <link>https://example.org/tags/css/</link>
+        <link>http://localhost:1313/tags/css/</link>
         <description>Recent content in Css on 这是一个博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/css/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/css/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>测试文章标题</title>
-        <link>https://example.org/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
+        <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</link>
         <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>
         
-        <guid>https://example.org/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
-        <description>&lt;img src="https://example.org/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post 测试文章标题" /&gt;&lt;p&gt;正文测试&lt;/p&gt;
+        <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/</guid>
+        <description>&lt;img src="http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A0/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post 测试文章标题" /&gt;&lt;p&gt;正文测试&lt;/p&gt;
 </description>
         </item>
         
