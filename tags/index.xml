@@ -6,7 +6,39 @@
         <description>Recent content in Tags on 这是一个博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Sun, 27 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Agent</title>
+        <link>http://localhost:1313/tags/agent/</link>
+        <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/agent/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Langgraph</title>
+        <link>http://localhost:1313/tags/langgraph/</link>
+        <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/langgraph/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Python</title>
+        <link>http://localhost:1313/tags/python/</link>
+        <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/python/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>测试</title>
+        <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+        <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Css</title>
         <link>http://localhost:1313/tags/css/</link>
         <pubDate>Sun, 27 Apr 2025 00:00:00 +0000</pubDate>

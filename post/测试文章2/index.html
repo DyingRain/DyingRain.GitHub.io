@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="zh-cn" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="博客搭建测试">
+<title>测试文章标题</title>
+
+<link rel='canonical' href='http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/'>
+
+<link rel="stylesheet" href="/scss/style.min.b9c8156d464c343bdacaf14a871581fb94cbbdb9dd5cbce4ba017361187cc930.css"><meta property='og:title' content="测试文章标题">
+<meta property='og:description' content="博客搭建测试">
+<meta property='og:url' content='http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/'>
+<meta property='og:site_name' content='这是一个博客'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='测试' /><meta property='article:tag' content='python' /><meta property='article:tag' content='langgraph' /><meta property='article:tag' content='agent' /><meta property='article:published_time' content='2025-04-29T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-04-29T00:00:00&#43;00:00'/><meta property='og:image' content='http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9.gif' />
+<meta name="twitter:title" content="测试文章标题">
+<meta name="twitter:description" content="博客搭建测试"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9.gif' />
+    <link rel="shortcut icon" href="/mao.gif" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/bd476ecdaa1eef1cde76b4753107f1e9_hu_15d2c9a52dab905d.gif" width="300"
+                            height="225" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">🍥</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">这是一个博客</a></h1>
+            <h2 class="site-description">博客搭建测试</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/">
+                <img src="/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9_hu_7f7404e0fc7012d6.gif"
+                        srcset="/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9_hu_7f7404e0fc7012d6.gif 800w, /post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9_hu_1a6f513d742623fb.gif 1600w"
+                        width="800" 
+                        height="600" 
+                        loading="lazy"
+                        alt="Featured image of post 测试文章标题" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/python/" >
+                Python
+            </a>
+        
+            <a href="/categories/langgraph/" >
+                Langgraph
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/">测试文章标题</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            博客搭建测试
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Apr 29, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    5 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <p>这里是正文</p>
+<p>下面是代码：</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> json
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> typing <span style="color:#f92672">import</span> TypedDict, Annotated
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> httpx
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langchain_openai <span style="color:#f92672">import</span> ChatOpenAI
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langgraph.checkpoint.memory <span style="color:#f92672">import</span> MemorySaver
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> langgraph.graph <span style="color:#f92672">import</span> StateGraph, END
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 大模型初始化，这里使用的是api服务########################################################################################</span>
+</span></span><span style="display:flex;"><span>llm_api <span style="color:#f92672">=</span> ChatOpenAI(base_url<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;https://api.nuwaapi.com/v1&#34;</span>,
+</span></span><span style="display:flex;"><span>                     api_key<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;sk-wugAKJoXSJXVuN9oZX2xv0TO7wUsa3mhpVm8MKroCjkjG8BA&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">judge_task_type</span>(task):
+</span></span><span style="display:flex;"><span>    prompt1 <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;&#39;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Role: 智能系统任务决策师
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Background: 用户需要对一个具体任务进行分类，以便智能系统能够准确地识别并执行相应的操作。用户当前面临四种任务类型：状态查询任务、异常处理任务、操作执行任务、知识问答任务，需要明确判断当前任务属于哪一种。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Profile: 你是一位专业的智能系统任务决策师，具备丰富的系统分析和任务分类经验，能够快速准确地识别任务特征并进行合理分类。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Skills: 你具备敏锐的任务识别能力、逻辑分析能力以及对不同任务类型的深入理解，能够根据任务描述的关键特征进行精准判断。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Goals: 准确判断用户所描述的任务属于状态查询任务、异常处理任务、操作执行任务还是知识问答任务。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Constrains: 仅根据用户提供的任务描述进行判断，不引入额外的主观假设；确保判断结果清晰明确，便于用户理解和后续操作。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - OutputFormat: 输出格式为json: {&#34;task_type&#34;: &#34;任务类型&#34;}
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Workflow:
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      1. 仔细分析用户提供的任务描述，提取关键信息。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      2. 根据任务描述的关键特征，与四种任务类型的标准进行比对。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">      3. 确定任务所属类型。
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    - Initialization: 请直接输出以下问题的答案:&#39;&#39;&#39;</span>
+</span></span><span style="display:flex;"><span>    raw_text <span style="color:#f92672">=</span> llm_api<span style="color:#f92672">.</span>invoke(prompt1 <span style="color:#f92672">+</span> task)<span style="color:#f92672">.</span>content
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;生文本:</span><span style="color:#e6db74">{</span>raw_text<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(raw_text)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer[<span style="color:#e6db74">&#39;task_type&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">judge_num_of_object</span>(task):
+</span></span><span style="display:flex;"><span>    prompt1 <span style="color:#f92672">=</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;你是系统感知Agent,现在需要根据当前任务判断需要获取哪些对象的状态,并生成当前任务需要处理的对象列表:</span><span style="color:#e6db74">{</span>task<span style="color:#e6db74">}</span><span style="color:#e6db74">。&#34;</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;输出格式为json: {&#34;object_1&#34;: &#34;对象名称&#34;, &#34;object_2&#34;: &#34;&#34;, &#34;object_3&#34;: &#34;&#34;, ......}&#39;</span>
+</span></span><span style="display:flex;"><span>    raw_text <span style="color:#f92672">=</span> llm_api<span style="color:#f92672">.</span>invoke(prompt1 <span style="color:#f92672">+</span> task)<span style="color:#f92672">.</span>content
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;生文本:</span><span style="color:#e6db74">{</span>raw_text<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    answer <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>loads(raw_text)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> answer
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">generate_dag_dict</span>(task):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Node</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> __init__(self, name, agent_type, next_nodes):
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>name <span style="color:#f92672">=</span> name
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>next_nodes <span style="color:#f92672">=</span> next_nodes
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>agent_type <span style="color:#f92672">=</span> agent_type
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add_next_node</span>(self, next_node):
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>next_nodes<span style="color:#f92672">.</span>append(next_node)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> __repr__(self):
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;节点名称:</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">, 类型</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>agent_type<span style="color:#e6db74">}</span><span style="color:#e6db74">, 下一跳:</span><span style="color:#e6db74">{</span>self<span style="color:#f92672">.</span>next_nodes<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    node_dict <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    start_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    task_type <span style="color:#f92672">=</span> judge_task_type(task)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;任务类型:</span><span style="color:#e6db74">{</span>task_type<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> task_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;状态查询任务&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        状态查询任务：系统感知Agent----报告反馈Agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        objects <span style="color:#f92672">=</span> judge_num_of_object(task)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;任务处理对象:</span><span style="color:#e6db74">{</span>objects<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        object_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建系统感知Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_end <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;end_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;报告反馈&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_end
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;start_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;start_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> objects<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>            object_name <span style="color:#f92672">=</span> objects[item]
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># print(object_name)</span>
+</span></span><span style="display:flex;"><span>            object_list<span style="color:#f92672">.</span>append(object_name)
+</span></span><span style="display:flex;"><span>            node_start<span style="color:#f92672">.</span>add_next_node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>)
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> Node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>])
+</span></span><span style="display:flex;"><span>            node_dict[object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建报告反馈Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;报告反馈&#34;</span>, <span style="color:#e6db74">&#34;报告反馈Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;END&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;报告反馈&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        start_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;start_系统感知&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> task_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;异常处理任务&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        异常处理任务：系统感知Agent----异常分析Agent----策略规划Agent----操作执行Agent----报告反馈Agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        objects <span style="color:#f92672">=</span> judge_num_of_object(task)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;任务处理对象:</span><span style="color:#e6db74">{</span>objects<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        object_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建系统感知Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_end <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;end_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;异常分析&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_end
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;start_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;start_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> objects<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>            object_name <span style="color:#f92672">=</span> objects[item]
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># print(object_name)</span>
+</span></span><span style="display:flex;"><span>            object_list<span style="color:#f92672">.</span>append(object_name)
+</span></span><span style="display:flex;"><span>            node_dict[<span style="color:#e6db74">&#34;start_系统感知&#34;</span>]<span style="color:#f92672">.</span>add_next_node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>)
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> Node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>])
+</span></span><span style="display:flex;"><span>            node_dict[object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建异常分析Agent节点</span>
+</span></span><span style="display:flex;"><span>        node <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;异常分析&#34;</span>, <span style="color:#e6db74">&#34;异常分析Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;策略规划&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;异常分析&#34;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建策略规划Agent节点</span>
+</span></span><span style="display:flex;"><span>        node <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;策略规划&#34;</span>, <span style="color:#e6db74">&#34;策略规划Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;策略规划&#34;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建操作执行Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;start_操作执行&#34;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        node_end <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;end_操作执行&#34;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;报告反馈&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;end_操作执行&#34;</span>] <span style="color:#f92672">=</span> node_end
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> object_list:
+</span></span><span style="display:flex;"><span>            node_dict[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>]<span style="color:#f92672">.</span>add_next_node(item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>)
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> Node(item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;end_操作执行&#34;</span>])
+</span></span><span style="display:flex;"><span>            node_dict[item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建报告反馈Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;报告反馈&#34;</span>, <span style="color:#e6db74">&#34;报告反馈Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;END&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;报告反馈&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        start_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;start_系统感知&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> task_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;操作执行任务&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        操作执行任务：系统感知Agent----策略规划Agent----操作执行Agent----报告反馈Agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        objects <span style="color:#f92672">=</span> judge_num_of_object(task)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;任务处理对象:</span><span style="color:#e6db74">{</span>objects<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        object_list <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建系统感知Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_end <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;end_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;策略规划&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_end
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;start_系统感知&#34;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;start_系统感知&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> objects<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>            object_name <span style="color:#f92672">=</span> objects[item]
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># print(object_name)</span>
+</span></span><span style="display:flex;"><span>            object_list<span style="color:#f92672">.</span>append(object_name)
+</span></span><span style="display:flex;"><span>            node_dict[<span style="color:#e6db74">&#34;start_系统感知&#34;</span>]<span style="color:#f92672">.</span>add_next_node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>)
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> Node(object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;end_系统感知&#34;</span>])
+</span></span><span style="display:flex;"><span>            node_dict[object_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_系统感知&#39;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建策略规划Agent节点</span>
+</span></span><span style="display:flex;"><span>        node <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;策略规划&#34;</span>, <span style="color:#e6db74">&#34;策略规划Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;策略规划&#34;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建操作执行Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;start_操作执行&#34;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        node_end <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;end_操作执行&#34;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;报告反馈&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;end_操作执行&#34;</span>] <span style="color:#f92672">=</span> node_end
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> object_list:
+</span></span><span style="display:flex;"><span>            node_dict[<span style="color:#e6db74">&#34;start_操作执行&#34;</span>]<span style="color:#f92672">.</span>add_next_node(item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>)
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> Node(item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>, <span style="color:#e6db74">&#34;操作执行Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;end_操作执行&#34;</span>])
+</span></span><span style="display:flex;"><span>            node_dict[item <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_操作执行&#39;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 构建报告反馈Agent节点</span>
+</span></span><span style="display:flex;"><span>        node_start <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;报告反馈&#34;</span>, <span style="color:#e6db74">&#34;报告反馈Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;END&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;报告反馈&#34;</span>] <span style="color:#f92672">=</span> node_start
+</span></span><span style="display:flex;"><span>        start_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;start_系统感知&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> task_type <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;知识问答任务&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        操作执行任务:报告反馈Agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;知识问答没有对象&#34;</span>)
+</span></span><span style="display:flex;"><span>        node <span style="color:#f92672">=</span> Node(<span style="color:#e6db74">&#34;报告反馈&#34;</span>, <span style="color:#e6db74">&#34;报告反馈Agent&#34;</span>, next_nodes<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#34;END&#34;</span>])
+</span></span><span style="display:flex;"><span>        node_dict[<span style="color:#e6db74">&#34;报告反馈&#34;</span>] <span style="color:#f92672">=</span> node
+</span></span><span style="display:flex;"><span>        start_node <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;报告反馈&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> [node_dict, start_node]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">travel_dag</span>(nodes, stack):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> stack[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;END&#39;</span>:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>    node <span style="color:#f92672">=</span> nodes[stack[<span style="color:#ae81ff">0</span>]]
+</span></span><span style="display:flex;"><span>    print(node<span style="color:#f92672">.</span>name)
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;  |&#34;</span>)
+</span></span><span style="display:flex;"><span>    stack<span style="color:#f92672">.</span>pop(<span style="color:#ae81ff">0</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> item <span style="color:#f92672">in</span> node<span style="color:#f92672">.</span>next_nodes:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> item <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> stack:
+</span></span><span style="display:flex;"><span>            stack<span style="color:#f92672">.</span>append(item)
+</span></span><span style="display:flex;"><span>    travel_dag(nodes, stack)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">print_dag</span>(nodes, start_node):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;生成DAG流:&#34;</span>)
+</span></span><span style="display:flex;"><span>    travel_dag(nodes, [start_node])
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34; END&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># langgraph基础组件定义（类/函数等）########################################################################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">concat</span>(original: list, new: list) <span style="color:#f92672">-&gt;</span> list:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> original <span style="color:#f92672">+</span> new
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">concat2</span>(original: int, new: int) <span style="color:#f92672">-&gt;</span> int:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> new <span style="color:#f92672">+</span> original
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ChatState</span>(TypedDict):
+</span></span><span style="display:flex;"><span>    messages: Annotated[list, concat]
+</span></span><span style="display:flex;"><span>    flag: Annotated[int, concat2]
+</span></span><span style="display:flex;"><span>    need_command: int
+</span></span><span style="display:flex;"><span>    query: str
+</span></span><span style="display:flex;"><span>    status: str  <span style="color:#75715e"># &#34;normal&#34;/&#34;error&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># agent相关函数#######################################################################################################</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">node_func</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;测试缓冲节点......&#34;</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">agent_quest</span>(agent_url, data):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    采用异步通信处理http交互，  任务解析——其他agent——大模型api
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    data:dict
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">with</span> httpx<span style="color:#f92672">.</span>AsyncClient() <span style="color:#66d9ef">as</span> client:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>            data <span style="color:#f92672">=</span> json<span style="color:#f92672">.</span>dumps(data)
+</span></span><span style="display:flex;"><span>            response <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> client<span style="color:#f92672">.</span>post(agent_url, json<span style="color:#f92672">=</span>data, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">100000000</span>)
+</span></span><span style="display:flex;"><span>            response<span style="color:#f92672">.</span>raise_for_status()
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> response<span style="color:#f92672">.</span>json()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">except</span> httpx<span style="color:#f92672">.</span>HTTPStatusError <span style="color:#66d9ef">as</span> exc:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># 处理B服务返回的错误</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;error&#34;</span>: <span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;B service error: </span><span style="color:#e6db74">{</span>exc<span style="color:#f92672">.</span>response<span style="color:#f92672">.</span>text<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">system_perceive</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        节点执行函数，根据当前节点类型来调用分机部署的agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 要发送的数据JSON-RPC 2.0规范</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;执行system_perceive......&#34;</span>)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;jsonrpc&#34;</span>: <span style="color:#e6db74">&#34;2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string | number&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;params&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;[key: string]&#34;</span>: <span style="color:#e6db74">&#34;unknown&#34;</span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    system_perceive_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:5004/system_perceive&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用agent</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> agent_quest(system_perceive_url, data)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;messages&#34;</span>: [result]}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">command_run</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        节点执行函数，根据当前节点类型来调用分机部署的agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 要发送的数据JSON-RPC 2.0规范</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;执行command_run......&#34;</span>)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;jsonrpc&#34;</span>: <span style="color:#e6db74">&#34;2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string | number&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;params&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;[key: string]&#34;</span>: <span style="color:#e6db74">&#34;unknown&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;task&#34;</span>: <span style="color:#e6db74">&#34;test_task&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    command_run_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:5003/command_run&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用agent</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> agent_quest(command_run_url, data)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;messages&#34;</span>: [result]}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">exception_analysis</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        节点执行函数，根据当前节点类型来调用分机部署的agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 要发送的数据JSON-RPC 2.0规范</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;执行exception_analysis......&#34;</span>)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;jsonrpc&#34;</span>: <span style="color:#e6db74">&#34;2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string | number&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;params&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;[key: string]&#34;</span>: <span style="color:#e6db74">&#34;unknown&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;task&#34;</span>: <span style="color:#e6db74">&#34;test_task&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    exception_analysis_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:5001/exception_analysis&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用agent</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> agent_quest(exception_analysis_url, data)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;messages&#34;</span>: [result]}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">report_generate</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        节点执行函数，根据当前节点类型来调用分机部署的agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 要发送的数据JSON-RPC 2.0规范</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;执行report_generate......&#34;</span>)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;jsonrpc&#34;</span>: <span style="color:#e6db74">&#34;2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string | number&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;params&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;[key: string]&#34;</span>: <span style="color:#e6db74">&#34;unknown&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;agent&#34;</span>: <span style="color:#e6db74">&#34;report_generate&#34;</span>,
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;query&#34;</span>: state[<span style="color:#e6db74">&#34;query&#34;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    report_generate_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:5005/report_generate&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用agent</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> agent_quest(report_generate_url, data)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;messages&#34;</span>: [result]}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">async</span> <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">strategy_plan</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        节点执行函数，根据当前节点类型来调用分机部署的agent
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 要发送的数据JSON-RPC 2.0规范</span>
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;执行strategy_plan......&#34;</span>)
+</span></span><span style="display:flex;"><span>    data <span style="color:#f92672">=</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;jsonrpc&#34;</span>: <span style="color:#e6db74">&#34;2.0&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;id&#34;</span>: <span style="color:#e6db74">&#34;string | number&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;method&#34;</span>: <span style="color:#e6db74">&#34;string&#34;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;params&#34;</span>: {
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;[key: string]&#34;</span>: <span style="color:#e6db74">&#34;unknown&#34;</span>
+</span></span><span style="display:flex;"><span>        },
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;task&#34;</span>: <span style="color:#e6db74">&#34;test_task&#34;</span>
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    strategy_plan_url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;http://localhost:5002/strategy_plan&#39;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># 调用agent</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#66d9ef">await</span> agent_quest(strategy_plan_url, data)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> {<span style="color:#e6db74">&#34;flag&#34;</span>: <span style="color:#ae81ff">1</span>, <span style="color:#e6db74">&#34;messages&#34;</span>: [result]}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># agent调用索引，按照节点名称配置合适的节点执行函数</span>
+</span></span><span style="display:flex;"><span>agent_dict <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;操作执行Agent&#34;</span>: command_run, <span style="color:#e6db74">&#34;异常分析Agent&#34;</span>: exception_analysis, <span style="color:#e6db74">&#34;报告反馈Agent&#34;</span>: report_generate,
+</span></span><span style="display:flex;"><span>              <span style="color:#e6db74">&#34;策略规划Agent&#34;</span>: strategy_plan, <span style="color:#e6db74">&#34;系统感知Agent&#34;</span>: system_perceive}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">WorkGraph</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> __init__(self, dag, start):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>graph <span style="color:#f92672">=</span> <span style="color:#66d9ef">None</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>dag <span style="color:#f92672">=</span> dag
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>start <span style="color:#f92672">=</span> start
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_fallback_judge_branch</span>(workflow, pre_node, fallback_node):
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 设置异常判断边</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fallback_judge</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>            status <span style="color:#f92672">=</span> state[<span style="color:#e6db74">&#34;status&#34;</span>]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">if</span> status <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;error&#34;</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">False</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">elif</span> status <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;normal&#34;</span>:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">True</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        workflow<span style="color:#f92672">.</span>add_conditional_edges(
+</span></span><span style="display:flex;"><span>            pre_node,
+</span></span><span style="display:flex;"><span>            fallback_judge,
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e"># {&#34;error&#34;: fallback_node, &#34;normal&#34;: dag_next_node},</span>
+</span></span><span style="display:flex;"><span>            {<span style="color:#e6db74">&#34;error&#34;</span>: fallback_node},
+</span></span><span style="display:flex;"><span>        )
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;为节点</span><span style="color:#e6db74">{</span>pre_node<span style="color:#e6db74">}</span><span style="color:#e6db74">创建异常判断分支&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">@staticmethod</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">create_fallback_node</span>(workflow):
+</span></span><span style="display:flex;"><span>        <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        遇故障自动切换处理策略,
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        设置一个独立的异常处理节点,每个节点运行后使用条件边判断异常再交付
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">        &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fall_back</span>(state: ChatState):
+</span></span><span style="display:flex;"><span>            <span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            异常处理函数，可扩展增添其他功能
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">            &#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;异常处理节点&#34;</span>)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;系统状态:&#34;</span>, state[<span style="color:#e6db74">&#34;status&#34;</span>])
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        workflow<span style="color:#f92672">.</span>add_node(<span style="color:#e6db74">&#34;fallback_node&#34;</span>, fall_back)
+</span></span><span style="display:flex;"><span>        workflow<span style="color:#f92672">.</span>add_edge(<span style="color:#e6db74">&#34;fallback_node&#34;</span>, END)
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">&#34;异常处理节点创建完成&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dag_to_langgraph</span>(self):
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        workflow <span style="color:#f92672">=</span> StateGraph(ChatState)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 初始化异常处理节点</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>create_fallback_node(workflow)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> node_name <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dag<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>dag[node_name]
+</span></span><span style="display:flex;"><span>            workflow<span style="color:#f92672">.</span>add_node(node<span style="color:#f92672">.</span>name, agent_dict[node<span style="color:#f92672">.</span>agent_type])
+</span></span><span style="display:flex;"><span>            self<span style="color:#f92672">.</span>create_fallback_judge_branch(workflow, node<span style="color:#f92672">.</span>name, <span style="color:#e6db74">&#34;fallback_node&#34;</span>)
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;节点</span><span style="color:#e6db74">{</span>node<span style="color:#f92672">.</span>name<span style="color:#e6db74">}</span><span style="color:#e6db74">创建成功&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> node_name <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dag<span style="color:#f92672">.</span>keys():
+</span></span><span style="display:flex;"><span>            node <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>dag[node_name]
+</span></span><span style="display:flex;"><span>            next_nodes <span style="color:#f92672">=</span> node<span style="color:#f92672">.</span>next_nodes
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">for</span> next_node_name <span style="color:#f92672">in</span> next_nodes:
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">if</span> next_node_name <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;END&#39;</span>:
+</span></span><span style="display:flex;"><span>                    workflow<span style="color:#f92672">.</span>add_edge(node<span style="color:#f92672">.</span>name, END)
+</span></span><span style="display:flex;"><span>                <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>                    workflow<span style="color:#f92672">.</span>add_edge(node<span style="color:#f92672">.</span>name, next_node_name)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 设置入口</span>
+</span></span><span style="display:flex;"><span>        workflow<span style="color:#f92672">.</span>set_entry_point(self<span style="color:#f92672">.</span>start)
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># 编译图</span>
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>graph <span style="color:#f92672">=</span> workflow<span style="color:#f92672">.</span>compile(checkpointer<span style="color:#f92672">=</span>MemorySaver())
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">draw_graph</span>(self):
+</span></span><span style="display:flex;"><span>        self<span style="color:#f92672">.</span>graph<span style="color:#f92672">.</span>get_graph()<span style="color:#f92672">.</span>print_ascii()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#result = generate_dag_dict(task=&#34;分析NAVI, serve1, test_server三台服务器的gpu异常原因并执行解决方案&#34;)</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">#result = generate_dag_dict(task=&#34;什么是人工智能&#34;)</span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> generate_dag_dict(task<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;分析NAVI, serve1两台服务器的gpu状态&#34;</span>)
+</span></span><span style="display:flex;"><span>    node_dict, start <span style="color:#f92672">=</span> result
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    graph <span style="color:#f92672">=</span> WorkGraph(node_dict, start)
+</span></span><span style="display:flex;"><span>    graph<span style="color:#f92672">.</span>dag_to_langgraph()
+</span></span><span style="display:flex;"><span>    graph<span style="color:#f92672">.</span>draw_graph()
+</span></span></code></pre></div>
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/%E6%B5%8B%E8%AF%95/">测试</a>
+        
+            <a href="/tags/python/">Python</a>
+        
+            <a href="/tags/langgraph/">Langgraph</a>
+        
+            <a href="/tags/agent/">Agent</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2025 这是一个博客
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>
