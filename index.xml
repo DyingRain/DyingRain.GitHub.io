@@ -6,13 +6,22 @@
         <description>Recent content on 这是一个博客</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>测试文章标题</title>
+        <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>毕设相关</title>
+        <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A03/</link>
+        <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A03/</guid>
+        <description>&lt;img src="http://localhost:1313/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post 毕设相关" /&gt;&lt;p&gt;这里是正文&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>agent工作流</title>
         <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</link>
         <pubDate>Tue, 29 Apr 2025 00:00:00 +0000</pubDate>
         
         <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/</guid>
-        <description>&lt;img src="http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post 测试文章标题" /&gt;&lt;p&gt;这里是正文&lt;/p&gt;
+        <description>&lt;img src="http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A02/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post agent工作流" /&gt;&lt;p&gt;这里是正文&lt;/p&gt;
 &lt;p&gt;下面是代码：&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; json
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; typing &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; TypedDict, Annotated

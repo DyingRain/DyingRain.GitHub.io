@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Uiautomator on 这是一个博客</title>
+        <link>http://localhost:1313/tags/uiautomator/</link>
+        <description>Recent content in Uiautomator on 这是一个博客</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <lastBuildDate>Wed, 30 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/uiautomator/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>毕设相关</title>
+        <link>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A03/</link>
+        <pubDate>Wed, 30 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:1313/post/%E6%B5%8B%E8%AF%95%E6%96%87%E7%AB%A03/</guid>
+        <description>&lt;img src="http://localhost:1313/bd476ecdaa1eef1cde76b4753107f1e9.gif" alt="Featured image of post 毕设相关" /&gt;&lt;p&gt;这里是正文&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
